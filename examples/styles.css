@@ -1,0 +1,63 @@
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+}
+
+.card-wrapper {
+  width: 33.33%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+}
+@media (max-width: 750px) {
+  .card-wrapper {
+    width: 100%;
+  }
+}
+.card-wrapper .card {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #3366CC;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.card-wrapper .card h3 {
+  margin-bottom: 0px;
+}
+.card-wrapper .card p {
+  color: #c6d9ff;
+}
+
+.readmore-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.readmore-container .readmore {
+  box-sizing: border-box;
+  font-size: 30px;
+  width: 33.33%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3366CC;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .readmore-container .readmore {
+    width: 100%;
+  }
+}
+.readmore-container .readmore:hover {
+  background-color: #2952a3;
+}
