@@ -6,62 +6,108 @@ $breakpoint: 750px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Rubik', sans-serif;
+}
+
+.cards-container{
   color: #ffffff;
-}
 
-.card-wrapper{
-  width: 33.33%;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 20px;
-  @media(max-width: $breakpoint){
-    width: 100%;
-  }
-  .card{
-    width: 100%;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: $primary-color;
-    box-sizing: border-box;
-    padding: 15px;
-    h3{
-        margin-bottom: 0px;
-    }
-
-    p{
-      color: #c6d9ff;
-    }
-  }
-}
-
-.readmore-container{
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-
-  .readmore{
-    border-radius: 100px;
-    box-sizing: border-box;
-    font-size: 30px;
+  .card-wrapper{
     width: 33.33%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $primary-color;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ffffff;
-    display: block;
+    display: inline-block;
+    box-sizing: border-box;
     padding: 20px;
-    text-align: center;
-    text-decoration: none;
-
     @media(max-width: $breakpoint){
       width: 100%;
     }
+    .card{
+      width: 100%;
+      display: inline-block;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 15px;
+      h3{
+          margin-bottom: 0px;
+      }
 
-    &:hover{
-      background-color: darken($primary-color, 10%);
+      p{
+        color: #c6d9ff;
+      }
+    }
+
+    &:nth-child(4n+1){
+      .card{
+        background-color: darken($primary-color, 20%);
+      }
+    }
+    &:nth-child(4n+2){
+      .card{
+        background-color: darken($primary-color, 10%);
+      }
+    }
+    &:nth-child(4n+3){
+      .card{
+        background-color: $primary-color;
+      }
+    }
+    &:nth-child(4n+4){
+      .card{
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+
+  .readmore-container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    .readmore{
+      border-radius: 100px;
+      box-sizing: border-box;
+      font-size: 30px;
+      width: 33.33%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $primary-color;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffffff;
+      display: block;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+
+      @media(max-width: $breakpoint){
+        width: 100%;
+      }
+
+      &:hover{
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+.lists-container{
+  .list{
+    margin-top: 50px;
+    padding-left: 0px;
+    li{
+      box-sizing: border-box;
+      padding: 20px;
+      width: 100%;
+      display: block;
+      &:nth-child(2n){
+        background-color: lighten(grey, 20%);
+      }
+    }
+  }
+
+  .readmore-container{
+    .readmore{
+      padding: 10px;
+      font-size: 14px;
     }
   }
 }

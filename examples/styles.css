@@ -3,42 +3,55 @@
   margin-left: auto;
   margin-right: auto;
   font-family: "Rubik", sans-serif;
-  color: #ffffff;
 }
 
-.card-wrapper {
+.cards-container {
+  color: #ffffff;
+}
+.cards-container .card-wrapper {
   width: 33.33%;
   display: inline-block;
   box-sizing: border-box;
   padding: 20px;
 }
 @media (max-width: 750px) {
-  .card-wrapper {
+  .cards-container .card-wrapper {
     width: 100%;
   }
 }
-.card-wrapper .card {
+.cards-container .card-wrapper .card {
   width: 100%;
   display: inline-block;
   border-radius: 5px;
-  background-color: #3366CC;
   box-sizing: border-box;
   padding: 15px;
 }
-.card-wrapper .card h3 {
+.cards-container .card-wrapper .card h3 {
   margin-bottom: 0px;
 }
-.card-wrapper .card p {
+.cards-container .card-wrapper .card p {
   color: #c6d9ff;
 }
-
-.readmore-container {
+.cards-container .card-wrapper:nth-child(4n+1) .card {
+  background-color: #1f3d7a;
+}
+.cards-container .card-wrapper:nth-child(4n+2) .card {
+  background-color: #2952a3;
+}
+.cards-container .card-wrapper:nth-child(4n+3) .card {
+  background-color: #3366CC;
+}
+.cards-container .card-wrapper:nth-child(4n+4) .card {
+  background-color: #5c85d6;
+}
+.cards-container .readmore-container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
 }
-.readmore-container .readmore {
+.cards-container .readmore-container .readmore {
+  border-radius: 100px;
   box-sizing: border-box;
   font-size: 30px;
   width: 33.33%;
@@ -54,10 +67,27 @@
   text-decoration: none;
 }
 @media (max-width: 750px) {
-  .readmore-container .readmore {
+  .cards-container .readmore-container .readmore {
     width: 100%;
   }
 }
-.readmore-container .readmore:hover {
+.cards-container .readmore-container .readmore:hover {
   background-color: #2952a3;
+}
+
+.lists-container .list {
+  margin-top: 50px;
+  padding-left: 0px;
+}
+.lists-container .list li {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+.lists-container .list li:nth-child(2n) {
+  background-color: #b3b3b3;
+}
+.lists-container .readmore-container .readmore {
+  padding: 20px;
 }
