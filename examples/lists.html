@@ -8,9 +8,9 @@
   <script>
     $(document).ready(function(){
       Readmore_Start({
-        itemselector: ".list li",
+        itemselector: ".list li:not(.readmore)",
         itemamountshown: 5,
-        readmoreselector: ".readmore-container button",
+        readmoreselector: ".list li.readmore",
         itemamountadded: 3
       });
 
@@ -96,13 +96,13 @@
           <li>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </li>
+          <li class="readmore">
+            More...
+          </li>
         </ul>
 
 
 
-      </div>
-      <div class="readmore-container">
-        <button class="readmore">Read more</button>
       </div>
   </div>
 </body>

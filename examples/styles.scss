@@ -101,13 +101,13 @@ $breakpoint: 750px;
       &:nth-child(2n){
         background-color: lighten(grey, 20%);
       }
+      &.readmore:hover{
+          cursor: pointer;
+          background-color: darken(grey, 10%);
+          color: white;
+        
+      }
     }
   }
 
-  .readmore-container{
-    .readmore{
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
 }

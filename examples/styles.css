@@ -88,6 +88,8 @@
 .lists-container .list li:nth-child(2n) {
   background-color: #b3b3b3;
 }
-.lists-container .readmore-container .readmore {
-  padding: 20px;
+.lists-container .list li.readmore:hover {
+  cursor: pointer;
+  background-color: #676767;
+  color: white;
 }
